@@ -149,9 +149,11 @@ function addClickSimple(x, y, dragging)
 
 function clearCanvas_simple()
 {
+	context_simple.strokeStyle = "#000000";
+	context_simple.lineJoin = "round";
+	context_simple.lineWidth = 1;
 	context_simple.clearRect(0, 0, canvasWidth, canvasHeight);
-	context_simple.rect(0, 0, canvasWidth, canvasHeight);
-	context_simple.stroke();
+	context_simple.strokeRect(0, 0, canvasWidth, canvasHeight);
 }
 
 // Converts canvas to an image
@@ -167,7 +169,7 @@ function convertCanvasToImage() {
 function redrawSimple()
 {
 	clearCanvas_simple();
-	var radius = 15;
+	var radius = 75;
 	context_simple.strokeStyle = "#000000";
 	context_simple.lineJoin = "round";
 	context_simple.lineWidth = radius;
