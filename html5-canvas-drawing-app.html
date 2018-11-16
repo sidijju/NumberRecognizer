@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1> Welcome to the Number Recognizer!</h1>
+    <h4> Created by Sid Ijju </h4>
+    <h3> In this app, you will be able to draw a number and have a machine learning algorithm attempt to recognize it! </h3>
+    <p> The machine learning algorithm was created using the MNIST Digit Recognition Dataset and Convolutional Neural Networks.</p>
+    <p> To run the algorithm, please write a sample digit, and then hit Submit to have the algorithm classify it. </p>
+    <p> Otherwise, you can clear the box and redraw any digit.</p>
+    <title>HTML5 Create HTML5 Canvas JavaScript Drawing App Example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="canvas.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <div class = "image">
+          <div id="canvasSimpleDiv"></div>
+        </div>
+        <button id = "clearCanvasSimple" type = "button"> Clear </button>
+        <button id = "submit" type = "button"> Submit </button>
+
+        <script type="text/javascript"> $(document).ready(function() {
+        	 prepareSimpleCanvas();
+         });</script>
+    </div>
+  <div class="column">
+    <img id = "submission" src = ""></img>
+  </div>
+</div>
+
+  <h3 id="prediction"> Waiting for submission . . .</h3>
+  </body>
+</html>
