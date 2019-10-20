@@ -1,6 +1,6 @@
 # NumberRecognizer
 
-This app utilizes Tensorflow.js to take in a drawing from an html canvas and run the image through a convolutional neural network trained on thhe MNIST Digit Recognition Dataset. For now, the website must be hosted on the local machine (use the command python3 -m http.server) and then accessed via the localhost. 
+This app utilizes Tensorflow.js to take in a drawing from an html canvas and run the image through a convolutional neural network trained on the MNIST Digit Recognition Dataset. For now, the website must be hosted on the local machine (use the command python3 -m http.server) and then accessed via the localhost. 
 
 ## Future Work
 
